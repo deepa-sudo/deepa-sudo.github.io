@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     
     const submitForm = () => {
-        var contactName = window.userName;
-        var subject = window.subject;
-        var contactEmail = window.email;
-        var contactMessage = window.message;
+        var contactName = window.userName.value;
+        var subject = window.subject.value;
+        var contactEmail = window.email.value;
+        var contactMessage = window.message.value;
         if (!!contactName && !!subject& !!contactEmail && !!contactMessage) {
             window.open(
             `mailto:${contactEmail}?subject=${encodeURIComponent(
