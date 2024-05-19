@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         var contactMessage = window.message.value;
         if (!!contactName && !!subject& !!contactEmail && !!contactMessage) {
             window.open(
-            `mailto:${contactEmail}?subject=${encodeURIComponent(
+            `mailto:deepagusain313@gmail.com?subject=${encodeURIComponent(
                 subject
             )}&body=${encodeURIComponent(contactName)} (${encodeURIComponent(
                 contactEmail
