@@ -1,176 +1,636 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Deepa Gusain — Senior Frontend Developer with 7.5+ years of experience in React.js, Next.js, TypeScript, and modern web technologies."
+    />
+    <title>Deepa Gusain | Senior Frontend Developer</title>
+    <link rel="stylesheet" href="assets/css/index.css?v=2" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Exo+2:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="assets/js/index.js" defer></script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deepa Gusain</title>
-    <link rel="stylesheet" href="assets/css/index.css?v=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400&display=swap" rel="stylesheet">
-    <script src="assets/js/index.js"></script>
-</head>
-
-<body>
-    <div class="wide-section">
-        <div class="flex-section">
-            <p>deepagusain</p>
-            <div>
-                <a href="https://www.linkedin.com/in/deepa-gusain-98b470167/" title="linkedIn" target="_blank"><img
-                        class="icon-img" src="assets/images/linkedIn.svg" width="24px" height="24px"></a>
-                <a href="https://github.com/deepa-sudo" title="GitHub" target="_blank"><img class="icon-img"
-                        src="assets/images/github.svg" width="24px" height="24px"></a>
-            </div>
+  <body>
+    <!-- ═══════════════════ NAV ═══════════════════ -->
+    <nav class="nav" id="navbar">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo"
+          >deepagusain<span class="accent">.</span></a
+        >
+        <ul class="nav-links">
+          <li><a href="#expertise" class="nav-link">Expertise</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-social">
+          <a
+            href="https://www.linkedin.com/in/deepa-gusain-98b470167/"
+            title="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="icon-img"
+              src="assets/images/linkedIn.svg"
+              width="20"
+              height="20"
+              alt="LinkedIn"
+            />
+          </a>
+          <a
+            href="https://github.com/deepa-sudo"
+            title="GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="icon-img"
+              src="assets/images/github.svg"
+              width="20"
+              height="20"
+              alt="GitHub"
+            />
+          </a>
         </div>
-        <div class="flex-section col-reverse-mobile">
-            <div class="section-half">
-                <h1 class="py-10">Nice To meet you! <br /> I'm <span class="underline">Deepa Gusain</span></h1>
-                <p class="py-10">I'm a front-end developer passionate about building accessible web app that user love
-                </p>
-                <p>
-                    <a href="#contact" class="underline">CONTACT ME</a>
-                    <br /><br /><br />
-                    <a class="button px-10 py-10" href="./assets/doc/Deepa_Gusain_6_Years_Resume.pdf"
-                        download="Deepa_Gusain_6_Years_Resume.pdf" target="_blank"
-                        type="application/octet-stream">Download Resume</a>
-                </p>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <ul>
+        <li><a href="#expertise" class="mobile-nav-link">Expertise</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+
+    <main>
+      <!-- ═══════════════════ HERO ═══════════════════ -->
+      <section class="hero-section" id="hero">
+        <div class="container">
+          <div class="hero-inner">
+            <div class="hero-text fade-in">
+              <p class="eyebrow">Senior Frontend Developer</p>
+              <h1 class="hero-title">
+                Hi, I'm<br />
+                <span class="accent">Deepa Gusain</span>
+              </h1>
+              <p class="hero-sub">
+                7.5+ years building high-performance, accessible web
+                applications. Specializing in <strong>React.js</strong>,
+                <strong>Next.js</strong>, and scalable frontend architecture.
+              </p>
+              <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a
+                  class="btn btn-outline"
+                  href="./assets/doc/Deepa_Gusain_6_Years_Resume.pdf"
+                  download="Deepa_Gusain_Resume.pdf"
+                  target="_blank"
+                  type="application/octet-stream"
+                >
+                  Download Resume
+                </a>
+              </div>
+              <div class="hero-stats">
+                <div class="stat">
+                  <span class="stat-num">7.5+</span>
+                  <span class="stat-label">Years Exp.</span>
+                </div>
+                <span class="stat-divider"></span>
+                <div class="stat">
+                  <span class="stat-num">4</span>
+                  <span class="stat-label">Companies</span>
+                </div>
+                <span class="stat-divider"></span>
+                <div class="stat">
+                  <span class="stat-num">10+</span>
+                  <span class="stat-label">Projects</span>
+                </div>
+              </div>
             </div>
-            <div class="section-half">
-                <img class="profile-img" src="assets/images/deepu.jpeg" width="280px" height="280px">
+
+            <div class="hero-image fade-in delay-200">
+              <div class="image-ring">
+                <img
+                  class="profile-img"
+                  src="assets/images/deepu.jpeg"
+                  width="300"
+                  height="300"
+                  alt="Deepa Gusain"
+                />
+              </div>
             </div>
+          </div>
         </div>
-        <hr class="my-40" />
-        <p class="heading underline">SKILLS</p>
-        <div class="flex-section my-40">
-            <div class="flex">
-                <p class="heading">React JS</p>
-                <p>6+ years</p>
-                <progress value="90" max="100"></progress><br>
+      </section>
+
+      <!-- ═══════════════════ EXPERTISE ═══════════════════ -->
+      <section class="section" id="expertise">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="section-label">What I Do</p>
+            <h2 class="section-title">
+              Areas of <span class="accent">Expertise</span>
+            </h2>
+          </div>
+          <div class="expertise-grid">
+            <div class="expertise-card reveal">
+              <div class="card-icon">&#9883;</div>
+              <h3>React &amp; Next.js</h3>
+              <p>
+                Architecting scalable apps with Next.js 13+ App Router, Server
+                Components, SSR, SSG, and API Routes for optimal performance and
+                SEO.
+              </p>
             </div>
-            <div class="flex">
-                <p class="heading">JavaScript</p>
-                <p>6+ years</p>
-                <progress value="90" max="100"></progress><br>
+
+            <div class="expertise-card reveal delay-100">
+              <div class="card-icon">&#9638;</div>
+              <h3>Micro-Frontend</h3>
+              <p>
+                Building independently deployable micro-frontends with Module
+                Federation for modular, large-scale Next.js projects.
+              </p>
             </div>
-            <div class="flex">
-                <p class="heading">NextJS</p>
-                <p>5+ years</p>
-                <progress value="90" max="100"></progress><br>
+
+            <div class="expertise-card reveal delay-200">
+              <div class="card-icon">&#9889;</div>
+              <h3>Performance</h3>
+              <p>
+                Deep expertise in code splitting, lazy loading, tree shaking,
+                and eliminating render-blocking resources across complex SPAs.
+              </p>
             </div>
-            <div class="flex">
-                <p class="heading">Node</p>
-                <p>5+ years</p>
-                <progress value="90" max="100"></progress><br>
+
+            <div class="expertise-card reveal delay-100">
+              <div class="card-icon">&#128736;</div>
+              <h3>WordPress Plugins</h3>
+              <p>
+                Custom WordPress plugin development with React-based admin UIs,
+                multi-vendor features, and email template builders.
+              </p>
             </div>
-            <div class="flex">
-                <p class="heading">Svelete</p>
-                <p>1 years</p>
-                <progress value="20" max="100"></progress><br>
+
+            <div class="expertise-card reveal delay-200">
+              <div class="card-icon">&#128203;</div>
+              <h3>Testing &amp; CI/CD</h3>
+              <p>
+                Writing unit and integration tests with Jest and React Testing
+                Library. Integrating test suites into CI/CD pipelines.
+              </p>
             </div>
-            <div class="flex">
-                <p class="heading">Git</p>
-                <p>5+ years</p>
-                <progress value="90" max="100"></progress><br>
+
+            <div class="expertise-card reveal delay-300">
+              <div class="card-icon">&#128101;</div>
+              <h3>Team Leadership</h3>
+              <p>
+                Mentoring junior developers, conducting code reviews, sprint
+                planning, and enforcing coding standards across the team.
+              </p>
             </div>
-            <div class="flex">
-                <p class="heading">PHP</p>
-                <p>5+ years</p>
-                <progress value="90" max="100"></progress><br>
-            </div>
-            <div class="flex">
-                <p class="heading">React Native</p>
-                <p>5+ years</p>
-                <progress value="90" max="100"></progress><br>
-            </div>
-            <div class="flex">
-                <p class="heading">Web Development</p>
-                <p>6+ years</p>
-                <progress value="90" max="100"></progress><br>
-            </div>
+          </div>
         </div>
-        <hr class="my-40" />
-        <p class="heading underline">WORK</p>
-        <div class="flex my-40">
-            <div>
-                <p class="heading">Nagarro</p>
-                <p><i>Associate Staff Engineer</i><span class="mx-5">•</span>February 2022 - Present</p>
+      </section>
+
+      <!-- ═══════════════════ SKILLS ═══════════════════ -->
+      <section class="section section-alt" id="skills">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="section-label">Technical Proficiency</p>
+            <h2 class="section-title">
+              Core <span class="accent">Skills</span>
+            </h2>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-item reveal">
+              <div class="skill-info">
+                <span class="skill-name">React.js</span>
+                <span class="skill-years">7+ yrs</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="95"></div>
+              </div>
             </div>
-            <div>
-                <p class="heading">Wister</p>
-                <p><i>ReactJS Developer</i><span class="mx-5">•</span>April 2021 - February 2022</p>
+
+            <div class="skill-item reveal delay-100">
+              <div class="skill-info">
+                <span class="skill-name">JavaScript (ES6+)</span>
+                <span class="skill-years">7+ yrs</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="95"></div>
+              </div>
             </div>
-            <div>
-                <p class="heading">Webkul</p>
-                <p><i>Senior Software Engineer</i><span class="mx-5">•</span>July 2018 - April 2021</p>
+
+            <div class="skill-item reveal">
+              <div class="skill-info">
+                <span class="skill-name">Next.js</span>
+                <span class="skill-years">5+ yrs</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
             </div>
+
+            <div class="skill-item reveal delay-100">
+              <div class="skill-info">
+                <span class="skill-name">TypeScript</span>
+                <span class="skill-years">5+ yrs</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="88"></div>
+              </div>
+            </div>
+
+            <div class="skill-item reveal">
+              <div class="skill-info">
+                <span class="skill-name">HTML5 &amp; CSS3</span>
+                <span class="skill-years">7+ yrs</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="95"></div>
+              </div>
+            </div>
+
+            <div class="skill-item reveal delay-100">
+              <div class="skill-info">
+                <span class="skill-name">Redux</span>
+                <span class="skill-years">5+ yrs</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="88"></div>
+              </div>
+            </div>
+
+            <div class="skill-item reveal">
+              <div class="skill-info">
+                <span class="skill-name">Jest &amp; React Testing Library</span>
+                <span class="skill-years">4+ yrs</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="82"></div>
+              </div>
+            </div>
+
+            <div class="skill-item reveal delay-100">
+              <div class="skill-info">
+                <span class="skill-name">Webpack &amp; Vite</span>
+                <span class="skill-years">5+ yrs</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+
+            <div class="skill-item reveal">
+              <div class="skill-info">
+                <span class="skill-name">Git &amp; CI/CD</span>
+                <span class="skill-years">7+ yrs</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+
+            <div class="skill-item reveal delay-100">
+              <div class="skill-info">
+                <span class="skill-name">RESTful API Integration</span>
+                <span class="skill-years">7+ yrs</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <hr class="my-40" />
-        <div class="e-card playing" id="contact">
-            <div class="image"></div>
+      </section>
 
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
+      <!-- ═══════════════════ EXPERIENCE ═══════════════════ -->
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="section-label">Career</p>
+            <h2 class="section-title">
+              Work <span class="accent">Experience</span>
+            </h2>
+          </div>
 
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <div>
+                    <h3 class="timeline-company">EPAM Systems</h3>
+                    <p class="timeline-role">Senior Software Engineer A3</p>
+                  </div>
+                  <span class="timeline-period">Dec 2024 &ndash; Present</span>
+                </div>
+                <ul class="timeline-points">
+                  <li>
+                    Built a Power BI-style analytics simulation application
+                    using React and Recharts — interactive dashboards, custom
+                    chart components, and real-time data visualizations.
+                  </li>
+                  <li>
+                    Implemented application monitoring features including live
+                    metric panels, alert thresholds, and drill-down reporting
+                    views.
+                  </li>
+                  <li>
+                    Developed a content-managed Next.js platform with a fully
+                    integrated CMS — dynamic page rendering, editorial
+                    workflows, and structured content delivery via API.
+                  </li>
+                  <li>
+                    Collaborated closely with backend and design teams to
+                    deliver pixel-perfect, performant interfaces aligned with
+                    business requirements.
+                  </li>
+                </ul>
+                <div class="timeline-tags">
+                  <span class="tag">React</span>
+                  <span class="tag">Recharts</span>
+                  <span class="tag">Next.js</span>
+                  <span class="tag">CMS</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">Data Viz</span>
+                </div>
+              </div>
+            </div>
 
-            <div class="infotop">
-                <form id="contact-form">
-                    CONTACT ME
-                    <div class="form-control">
-                        <input type="text" required name="name" id="userName">
-                        <label>
-                            <span style="transition-delay:0ms">N</span><span style="transition-delay:50ms">A</span><span
-                                style="transition-delay:100ms">M</span><span style="transition-delay:150ms">E</span>
-                        </label>
-                    </div>
+            <div class="timeline-item reveal delay-100">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <div>
+                    <h3 class="timeline-company">Nagarro</h3>
+                    <p class="timeline-role">Associate Staff Engineer</p>
+                  </div>
+                  <span class="timeline-period">Feb 2022 &ndash; Nov 2024</span>
+                </div>
+                <ul class="timeline-points">
+                  <li>
+                    Led frontend architecture for large-scale Next.js 13+
+                    applications using App Router, Server Components, and API
+                    Routes.
+                  </li>
+                  <li>
+                    Integrated micro-frontends via Module Federation to enable
+                    scalable, independently deployable modules.
+                  </li>
+                  <li>
+                    Mentored junior developers, conducted code reviews, and
+                    managed sprint planning &amp; task distribution.
+                  </li>
+                  <li>
+                    Delivered CI/CD integration and performance optimizations
+                    including code splitting and lazy loading.
+                  </li>
+                </ul>
+                <div class="timeline-tags">
+                  <span class="tag">Next.js 13+</span>
+                  <span class="tag">React</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">Module Federation</span>
+                  <span class="tag">CI/CD</span>
+                </div>
+              </div>
+            </div>
 
-                    <div class="form-control">
-                        <input type="email" required name="email" id="email">
-                        <label>
-                            <span style="transition-delay:0ms">E</span><span style="transition-delay:50ms">M</span><span
-                                style="transition-delay:100ms">A</span><span
-                                style="transition-delay:150ms">I</span><span style="transition-delay:200ms">L</span>
-                        </label>
-                        </label>
-                    </div>
-                    <div class="form-control">
-                        <input type="text" required name="subject" id="subject">
-                        <label>
-                            <span style="transition-delay:0ms">S</span><span style="transition-delay:50ms">U</span><span
-                                style="transition-delay:100ms">B</span><span
-                                style="transition-delay:150ms">J</span><span style="transition-delay:50ms">E</span><span
-                                style="transition-delay:100ms">C</span><span style="transition-delay:150ms">T</span>
-                        </label>
-                    </div>
-                    <div class="form-control">
-                        <input type="text" required name="message" id="message">
-                        <label>
-                            <span style="transition-delay:0ms">M</span><span style="transition-delay:50ms">E</span><span
-                                style="transition-delay:100ms">S</span><span
-                                style="transition-delay:150ms">S</span><span
-                                style="transition-delay:200ms">A</span><span
-                                style="transition-delay:200ms">G</span><span style="transition-delay:200ms">E</span>
-                        </label>
-                        </label>
-                    </div>
+            <div class="timeline-item reveal delay-200">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <div>
+                    <h3 class="timeline-company">Wister</h3>
+                    <p class="timeline-role">React.js Developer</p>
+                  </div>
+                  <span class="timeline-period">Apr 2021 &ndash; Feb 2022</span>
+                </div>
+                <ul class="timeline-points">
+                  <li>
+                    Built responsive, mobile-friendly interfaces using React.js,
+                    Redux, and modern JavaScript (ES6+).
+                  </li>
+                  <li>
+                    Coordinated with backend teams to define and integrate
+                    RESTful API endpoints.
+                  </li>
+                  <li>
+                    Improved application performance via state management
+                    optimizations and selective re-render strategies.
+                  </li>
+                </ul>
+                <div class="timeline-tags">
+                  <span class="tag">React.js</span>
+                  <span class="tag">Redux</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">REST APIs</span>
+                </div>
+              </div>
+            </div>
 
+            <div class="timeline-item reveal delay-300">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <div>
+                    <h3 class="timeline-company">Webkul</h3>
+                    <p class="timeline-role">Senior Software Engineer</p>
+                  </div>
+                  <span class="timeline-period">Jul 2018 &ndash; Apr 2021</span>
+                </div>
+                <ul class="timeline-points">
+                  <li>
+                    Developed and maintained custom WordPress plugins with
+                    React-based admin interfaces.
+                  </li>
+                  <li>
+                    Built multi-vendor features and drag-and-drop email template
+                    builders within the WordPress ecosystem.
+                  </li>
+                  <li>
+                    Delivered SSR and SSG pages enhancing end-user experience
+                    and search engine visibility.
+                  </li>
+                </ul>
+                <div class="timeline-tags">
+                  <span class="tag">WordPress</span>
+                  <span class="tag">React</span>
+                  <span class="tag">PHP</span>
+                  <span class="tag">SSR / SSG</span>
+                  <span class="tag">HTML &amp; CSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                    <button class="button" id="submit">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75">
-                            </path>
-                        </svg>
-                        <div class="text">
-                            Submit
-                        </div>
-                    </button>
+      <!-- ═══════════════════ CONTACT ═══════════════════ -->
+      <section class="section section-alt" id="contact">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="section-label">Let's Talk</p>
+            <h2 class="section-title">
+              Get In <span class="accent">Touch</span>
+            </h2>
+          </div>
+          <div class="contact-wrapper reveal">
+            <div class="e-card playing">
+              <div class="wave"></div>
+              <div class="wave"></div>
+              <div class="wave"></div>
+              <div class="infotop">
+                <form id="contact-form" novalidate>
+                  <div class="form-control">
+                    <input
+                      type="text"
+                      required
+                      name="name"
+                      id="userName"
+                      autocomplete="name"
+                    />
+                    <label for="userName">
+                      <span style="transition-delay: 0ms">N</span
+                      ><span style="transition-delay: 50ms">A</span
+                      ><span style="transition-delay: 100ms">M</span
+                      ><span style="transition-delay: 150ms">E</span>
+                    </label>
+                  </div>
+
+                  <div class="form-control">
+                    <input
+                      type="email"
+                      required
+                      name="email"
+                      id="email"
+                      autocomplete="email"
+                    />
+                    <label for="email">
+                      <span style="transition-delay: 0ms">E</span
+                      ><span style="transition-delay: 50ms">M</span
+                      ><span style="transition-delay: 100ms">A</span
+                      ><span style="transition-delay: 150ms">I</span
+                      ><span style="transition-delay: 200ms">L</span>
+                    </label>
+                  </div>
+
+                  <div class="form-control">
+                    <input type="text" required name="subject" id="subject" />
+                    <label for="subject">
+                      <span style="transition-delay: 0ms">S</span
+                      ><span style="transition-delay: 50ms">U</span
+                      ><span style="transition-delay: 100ms">B</span
+                      ><span style="transition-delay: 150ms">J</span
+                      ><span style="transition-delay: 200ms">E</span
+                      ><span style="transition-delay: 250ms">C</span
+                      ><span style="transition-delay: 300ms">T</span>
+                    </label>
+                  </div>
+
+                  <div class="form-control">
+                    <input type="text" required name="message" id="message" />
+                    <label for="message">
+                      <span style="transition-delay: 0ms">M</span
+                      ><span style="transition-delay: 50ms">E</span
+                      ><span style="transition-delay: 100ms">S</span
+                      ><span style="transition-delay: 150ms">S</span
+                      ><span style="transition-delay: 200ms">A</span
+                      ><span style="transition-delay: 250ms">G</span
+                      ><span style="transition-delay: 300ms">E</span>
+                    </label>
+                  </div>
+
+                  <button
+                    class="btn btn-primary btn-full"
+                    id="submit"
+                    type="submit"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                      ></path>
+                    </svg>
+                    Send Message
+                  </button>
                 </form>
+              </div>
             </div>
-
+          </div>
         </div>
-</body>
+      </section>
+    </main>
 
+    <!-- ═══════════════════ FOOTER ═══════════════════ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <p class="footer-logo">deepagusain<span class="accent">.</span></p>
+          <p class="footer-copy">
+            &copy; 2026 Deepa Gusain &mdash; Built with vanilla HTML, CSS &amp;
+            JS.
+          </p>
+          <div class="footer-social">
+            <a
+              href="https://www.linkedin.com/in/deepa-gusain-98b470167/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="LinkedIn"
+            >
+              <img
+                src="assets/images/linkedIn.svg"
+                width="18"
+                height="18"
+                alt="LinkedIn"
+              />
+            </a>
+            <a
+              href="https://github.com/deepa-sudo"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="GitHub"
+            >
+              <img
+                src="assets/images/github.svg"
+                width="18"
+                height="18"
+                alt="GitHub"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
