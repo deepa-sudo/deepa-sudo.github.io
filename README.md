@@ -1,9 +1,5 @@
 # 🚀 Deepa Gusain | Senior Frontend Developer
 
-<div align="center">
-  <img src="assets/images/deepu.jpeg" alt="Deepa Gusain" width="150" height="150" style="border-radius: 50%; border: 3px solid #ff6b6b;">
-</div>
-
 ## 👋 Hi, I'm Deepa Gusain
 
 **Senior Frontend Developer** with **7.5+ years** of experience building high-performance, accessible web applications. Specializing in **React.js**, **Next.js**, and scalable frontend architecture.
